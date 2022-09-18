@@ -1,13 +1,16 @@
 export const THEME = {
   COLORS: {
-    PURPLE: '#CCB3D2', 
-    WHITE: '#FFFFFF', 
-    ROSE: '#ED97A4',
-    GRAY: '#444444',
-    LINEAR_GRADIENT: ['rgba(0,0,0,0)', 'rgba(0,0,0,0.9)'],
+    PURPLE: "#CCB3D2", 
+    WHITE: "#FFFFFF", 
+    ROSE: "#ED97A4",
+    GRAY: "#5e5e5e",
+    LINEAR_GRADIENT: ["rgba(0,0,0,0)", "rgba(0,0,0,0.9)"],
   },
 
-  FONT_FAMILY: "monospace",
+  FONT_FAMILY: {
+    MONO: "monospace",
+    BIGNOODLE: "BIG-NOODLE"
+  },
 
   FONT_SIZE: {
     SM: 18,

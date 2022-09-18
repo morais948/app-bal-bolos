@@ -15,7 +15,7 @@ function AuthRoutes() {
           headerTitleStyle: {
             fontWeight: 'bold',
             fontSize: THEME.FONT_SIZE.MD,
-            fontFamily: THEME.FONT_FAMILY
+            fontFamily: THEME.FONT_FAMILY.MONO
           },
           headerTitleAlign: 'center'
         }}

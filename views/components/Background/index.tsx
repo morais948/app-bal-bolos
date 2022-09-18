@@ -1,6 +1,6 @@
 import { ImageBackground } from 'react-native';
 import { styles } from './styles';
-import backgroundImg from '../../../assets/images/foods-bg.jpg'
+import backgroundImg from '../../../assets/images/foods-bg.jpeg'
 
 //ajusta imagem do componente
 interface Props{
