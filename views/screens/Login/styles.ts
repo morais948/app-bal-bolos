@@ -28,5 +28,18 @@ export const styles = StyleSheet.create({
     borderColor: THEME.COLORS.PURPLE,
     color: THEME.COLORS.WHITE,
     backgroundColor: THEME.COLORS.PURPLE
+  },
+  submit: {
+    backgroundColor: THEME.COLORS.ROSE,
+    width: 100,
+    height: 30,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  textSubmit: {
+    color: THEME.COLORS.WHITE,
+    fontSize: THEME.FONT_SIZE.SM,
+    fontFamily: THEME.FONT_FAMILY.MONO
   }
 })

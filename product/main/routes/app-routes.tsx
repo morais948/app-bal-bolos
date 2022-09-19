@@ -1,10 +1,11 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Login } from '../../../views/screens/Login';
+import { Dasboard } from '../../../views/screens/Product';
 import { THEME } from '../../../views/theme/theme';
 
 const { Navigator, Screen } = createNativeStackNavigator()
 
-function AuthRoutes() {
+function AppRoutes() {
   return (
       <Navigator
         screenOptions={{
@@ -21,8 +22,11 @@ function AuthRoutes() {
         }}
       >
         <Screen name="LOGIN" component={Login} />
+        <Screen
+          name="DASBOARD" component={Dasboard} 
+        />
       </Navigator>
   );
 }
 
-export default AuthRoutes;
+export default AppRoutes;

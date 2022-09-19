@@ -1,16 +1,28 @@
+import { useRoute } from '@react-navigation/native';
+import { useEffect } from 'react';
 import { Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { DasboardData } from '../../../@types/navegation';
+import { Background } from '../../components/Background';
 
 import { styles } from './styles';
 
-export function Product() {
+export function Dasboard() {
+
+  const route = useRoute()
+  const credentials = route.params as DasboardData
+
+  useEffect(() => {
+    console.log(credentials)
+  }, [])
+  
   return (
-    <SafeAreaView style={styles.container}>
-      <View>
+    <Background>
+      <SafeAreaView style={styles.container}>
         <Text>
-          Hello Product!
+          Hello Dasboard !
         </Text>
-      </View>
-    </SafeAreaView>
+      </SafeAreaView>
+    </Background>
   );
 }
