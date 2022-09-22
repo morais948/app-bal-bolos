@@ -1,6 +1,6 @@
 import { useRoute } from '@react-navigation/native';
 import { useEffect } from 'react';
-import { Text, View } from 'react-native'
+import { AsyncStorage, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { DasboardData } from '../../../@types/navegation';
 import { Background } from '../../components/Background';

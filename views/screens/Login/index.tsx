@@ -1,9 +1,12 @@
 import { useNavigation } from '@react-navigation/native'
+import axios from 'axios'
 import { useState } from 'react'
-import { Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Alert, AsyncStorage, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { DasboardData } from '../../../@types/navegation'
+import { CONFIG } from '../../../shared/config/config'
 import { Background } from '../../components/Background'
+import { Loading } from '../../components/Loading'
 import { styles } from './styles'
 
 export function Login() {
@@ -11,20 +14,35 @@ export function Login() {
   const navagation = useNavigation()
   const [user, setUser] = useState('')
   const [password, setPassword] = useState('')
+  const [loading, setLoading] = useState(false)
 
-  function submitLogin({ user, password }: DasboardData) {
-    navagation.navigate('DASBOARD', { user, password })
+  async function submitLogin() {
+    try {
+      setLoading(true)
+      const response = await axios.post(`${CONFIG.api.url}/login`, {
+        email: user,
+        password: password
+      })
+
+      const token = response.data.body.data
+      setLoading(false)
+      navagation.navigate('DASBOARD', { token })
+    } catch (error: any) {
+      setLoading(false)
+      Alert.alert('Erro!', error.response.data.body.errors[0].message.toString())
+    }
   }
 
   return (
     <Background>
       <SafeAreaView style={styles.container}>
+        { loading ? <Loading /> : null }
         <View style={styles.login}>
           <Text style={styles.title}>BEM VINDO</Text>
 
           <TextInput 
             style={styles.input}
-            placeholder="usuário"
+            placeholder="email"
             placeholderTextColor="#fff" 
             onChangeText={(txt) => setUser(txt)}
           />
@@ -38,7 +56,7 @@ export function Login() {
           />
           
           <TouchableOpacity
-            onPress={() => submitLogin({user, password})}
+            onPress={() => submitLogin()}
             style={styles.submit}
           >
             <Text style={styles.textSubmit}>
