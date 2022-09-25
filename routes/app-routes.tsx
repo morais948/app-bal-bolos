@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Dasboard } from '../../../views/screens/Product';
-import { Login } from '../../../views/screens/Login';
-import { THEME } from '../../../views/theme/theme';
+import { Login } from '../screens/Login';
+import { Dasboard } from '../screens/Painel';
+import { THEME } from '../theme/theme';
 
 const { Navigator, Screen } = createNativeStackNavigator()
 
@@ -23,6 +23,9 @@ function AppRoutes() {
       >
         <Screen name="LOGIN" component={Login} />
         <Screen
+          options={{
+            headerShown: false
+          }}
           name="DASBOARD" component={Dasboard} 
         />
       </Navigator>

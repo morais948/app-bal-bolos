@@ -4,9 +4,9 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { Alert, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { CONFIG } from '../../../shared/config/config'
 import { Background } from '../../components/Background'
 import { Loading } from '../../components/Loading'
+import { CONFIG } from '../../shared/config/config'
 import { styles } from './styles'
 
 export function Login() {

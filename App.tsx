@@ -1,15 +1,11 @@
-import { StatusBar } from 'expo-status-bar'
-import { Routes } from './product/main/routes'
-import { useFonts } from 'expo-font'
-import { Background } from './views/components/Background'
-import { Loading } from './views/components/Loading'
+import { useFonts } from "expo-font"
+import { StatusBar } from "expo-status-bar";
 import bigNoodle from './assets/fonts/big-noodle/big_noodle_titling.ttf'
+import { Background } from "./components/Background";
+import { Loading } from "./components/Loading";
+import { Routes } from "./routes";
 
-interface Props{
-  children: React.ReactNode
-}
-
-export default function App({children}: Props) {
+export default function App() {
 
   const [fontLoaded] = useFonts({
     'BIG-NOODLE': bigNoodle,
@@ -24,5 +20,5 @@ export default function App({children}: Props) {
       />
       { fontLoaded ? <Routes /> : <Loading /> }
     </Background>
-  );
+  )
 }
