@@ -1,9 +1,9 @@
+import AsyncStorage from '@react-native-async-storage/async-storage'
 import { useNavigation } from '@react-navigation/native'
 import axios from 'axios'
-import { useState } from 'react'
-import { Alert, AsyncStorage, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { useEffect, useState } from 'react'
+import { Alert, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { DasboardData } from '../../../@types/navegation'
 import { CONFIG } from '../../../shared/config/config'
 import { Background } from '../../components/Background'
 import { Loading } from '../../components/Loading'
@@ -16,6 +16,18 @@ export function Login() {
   const [password, setPassword] = useState('')
   const [loading, setLoading] = useState(false)
 
+  useEffect(() => {
+    const checkIfYouAreLoggedIn = async () => {
+      setLoading(true)
+      const token = await AsyncStorage.getItem('@app_ball:token')
+      setLoading(false)
+      if(token){
+        navagation.navigate('DASBOARD', { token })
+      }
+    }
+    checkIfYouAreLoggedIn()
+  }, [])
+
   async function submitLogin() {
     try {
       setLoading(true)
@@ -25,9 +37,11 @@ export function Login() {
       })
 
       const token = response.data.body.data
+      await AsyncStorage.setItem('@app_ball:token', token)
       setLoading(false)
       navagation.navigate('DASBOARD', { token })
     } catch (error: any) {
+      await AsyncStorage.removeItem('@app_ball:token')
       setLoading(false)
       Alert.alert('Erro!', error.response.data.body.errors[0].message.toString())
     }

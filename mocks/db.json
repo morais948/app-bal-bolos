@@ -1,0 +1,152 @@
+{
+  "categorys": [
+    {
+      "id": "123",
+      "name": "Bolos"
+    },
+    {
+      "id": "321",
+      "name": "Salgados"
+    },
+    {
+      "id": "456",
+      "name": "Sobremesas"
+    },
+    {
+      "id": "876",
+      "name": "Lanches Rápidos"
+    },
+    {
+      "id": "987",
+      "name": "Bal Recomenda"
+    }
+  ],
+  "products": [
+    {
+      "id": "12332453",
+      "name": "Bolo de ovos",
+      "description": "delicioso bolo de ovos.",
+      "image": "../images/boloOvos.png",
+      "categoryId": "123"
+    },
+    {
+      "id": "35e2321",
+      "name": "Bolo de Alho",
+      "description": "delicioso bolo de alho.",
+      "image": "../images/boloAlho.png",
+      "categoryId": "123"
+    },
+    {
+      "id": "32534dd",
+      "name": "Bolo de Cenoura",
+      "description": "delicioso bolo de cenoura.",
+      "image": "../images/boloCenoura.png",
+      "categoryId": "123"
+    },
+    {
+      "id": "7862384ghjb",
+      "name": "Bolo de Chocolate",
+      "description": "delicioso bolo de chocolate.",
+      "image": "../images/boloChocolate.png",
+      "categoryId": "123"
+    },
+    {
+      "id": "83715hjkj",
+      "name": "Bolo Mesclado",
+      "description": "delicioso bolo mesclado.",
+      "image": "../images/boloMesclado.png",
+      "categoryId": "123"
+    },
+    {
+      "id": "87zdsuhka67",
+      "name": "Pastel de Flango",
+      "description": "delicioso pastel de flango.",
+      "image": "../images/pastelFlango.png",
+      "categoryId": "321"
+    },
+    {
+      "id": "23r4wefe",
+      "name": "Pastel de Carne",
+      "description": "delicioso pastel de carne.",
+      "image": "../images/pastelCarne.png",
+      "categoryId": "321"
+    },
+    {
+      "id": "sdafsdf342342",
+      "name": "Pastel de Queijo",
+      "description": "delicioso pastel de queijo.",
+      "image": "../images/pastelQueijo.png",
+      "categoryId": "321"
+    },
+    {
+      "id": "dsgfd5454322",
+      "name": "Coxinha de Flango",
+      "description": "deliciosa coxinha de flango.",
+      "image": "../images/coxinhaFlango.png",
+      "categoryId": "321"
+    },
+    {
+      "id": "09898hiujb87yg",
+      "name": "Coxinha de Carne",
+      "description": "deliciosa coxinha de carne.",
+      "image": "../images/coxinhaCarne.png",
+      "categoryId": "321"
+    },
+    {
+      "id": "09898hiujb87yg",
+      "name": "Coxinha de Peixe",
+      "description": "deliciosa coxinha de Peixe.",
+      "image": "../images/coxinhaPeixe.png",
+      "categoryId": "321"
+    },
+    {
+      "id": "5643weqrdfggh",
+      "name": "Doce de Balnilha",
+      "description": "deliciosa sobremesa de balnilha.",
+      "image": "../images/doceBalnilha.png",
+      "categoryId": "456"
+    },
+    {
+      "id": "564erdgfdfweqrqw",
+      "name": "Doce a moda da Bal",
+      "description": "deliciosa sobremesa feita com todo o bom gosto da Bal.",
+      "image": "../images/doceBal.png",
+      "categoryId": "456"
+    },
+    {
+      "id": "sdfgfd3235",
+      "name": "Pão na chapa",
+      "description": null,
+      "image": "../images/pao.png",
+      "categoryId": "876"
+    },
+    {
+      "id": "89767sadfytgh65rdrt",
+      "name": "Bolacha Amanteigada",
+      "description": null,
+      "image": "../images/bolacha.png",
+      "categoryId": "876"
+    },
+    {
+      "id": "0987246rfgvhbjnk",
+      "name": "Tapioca Poderosa de Carne",
+      "description": "tapioca recheada com carne, ovo, queijo, e presunto.",
+      "image": "../images/tapiocaCarne.png",
+      "categoryId": "987"
+    },
+    {
+      "id": "74563jkhgf",
+      "name": "Tapioca Poderosa de Carne",
+      "description": "tapioca recheada com carne, ovo, queijo, e presunto.",
+      "image": "../images/tapiocaCarne.png",
+      "categoryId": "987"
+    },
+    {
+      "id": "kjgasdf676723gh",
+      "name": "AQUELE HAMBURGUER",
+      "description": "hamburguer com ovo, carne, presunto, queijo, mortadela, salsicha, batata palha, tomate, cebola, alface, e calabresa.",
+      "image": "../images/tapiocaCarne.png",
+      "categoryId": "987"
+    }
+  ]
+}
