@@ -1,7 +1,7 @@
-import { InternalRoutes } from '../../routes/internal.route'
-import { Background } from '../../components/Background'
+import { InternalRoutes } from '../../../Product/routes/internal.routes'
+import { Background } from '../../../shared/components/Background'
 import { useRoute } from '@react-navigation/native';
-import { DasboardData } from '../../@types/navegation';
+import { DasboardData } from '../../../@types/navegation';
 
 export function Dasboard() {  
   const route = useRoute()

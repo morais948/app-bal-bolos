@@ -1,5 +1,5 @@
 import { Text, View } from 'react-native'
-import { Background } from '../../components/Background';
+import { Background } from '../../../shared/components/Background';
 
 import { styles } from './styles'
 

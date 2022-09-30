@@ -1,9 +1,10 @@
 import { useFonts } from "expo-font"
 import { StatusBar } from "expo-status-bar";
 import bigNoodle from './assets/fonts/big-noodle/big_noodle_titling.ttf'
-import { Background } from "./components/Background";
-import { Loading } from "./components/Loading";
 import { Routes } from "./routes";
+import { Background } from "./shared/components/Background";
+import { Loading } from "./shared/components/Loading";
+
 
 export default function App() {
 

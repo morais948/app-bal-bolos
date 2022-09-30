@@ -3,9 +3,10 @@ import axios from 'axios'
 import { useContext, useEffect } from 'react'
 import { FlatList, Text, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { Background } from '../../components/Background'
+import { Background } from '../../../shared/components/Background'
+import { AppContext } from '../../../shared/contexts/products/product.context'
 import { CardProduct } from '../../components/CardProduct'
-import { AppContext } from '../../contexts/products/product-context'
+
 
 import { styles } from './styles'
 

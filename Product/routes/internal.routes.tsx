@@ -1,11 +1,11 @@
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-import { Alert } from 'react-native';
-import { AppContext } from '../contexts/products/product-context';
-import { Category } from '../screens/Category';
-import { Product } from '../screens/Product';
-import { THEME } from '../theme/theme';
+import { createDrawerNavigator } from "@react-navigation/drawer"
+import axios from "axios"
+import { useEffect, useState } from "react"
+import { Alert } from "react-native"
+import { Category } from "../../Category/screens/Category"
+import { AppContext } from "../../shared/contexts/products/product.context"
+import { THEME } from "../../shared/theme/theme"
+import { Product } from "../screens/Product"
 
 const { Navigator, Screen } = createDrawerNavigator()
 

@@ -1,7 +1,8 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Login } from '../screens/Login';
-import { Dasboard } from '../screens/Painel';
-import { THEME } from '../theme/theme';
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { Login } from "../Auth/screens/Login";
+import { Dasboard } from "../Auth/screens/Painel";
+import { THEME } from "../shared/theme/theme";
+
 
 const { Navigator, Screen } = createNativeStackNavigator()
 
