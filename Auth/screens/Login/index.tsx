@@ -1,21 +1,13 @@
-import AsyncStorage from "@react-native-async-storage/async-storage"
-import { useNavigation } from "@react-navigation/native"
-import axios from "axios"
-import { useEffect, useState } from "react"
-import { Alert, SafeAreaView, Text, TextInput, TouchableOpacity, View } from "react-native"
+import { SafeAreaView, Text, TextInput, TouchableOpacity, View } from "react-native"
 import { Background } from "../../../shared/components/Background"
 import { Loading } from "../../../shared/components/Loading"
-import { CONFIG } from "../../../shared/config/config"
 import { useLogin } from "../../hooks/Login"
 import { styles } from "./styles"
-
 
 export function Login() {
 
   const {
-    user,
     setUser,
-    password,
     setPassword,
     loading,
     submitLogin

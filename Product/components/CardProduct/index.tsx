@@ -1,5 +1,5 @@
 import { ImageBackground, Text, TouchableOpacity } from 'react-native'
-import { Product } from '../../routes/internal.routes'
+import { Product } from '../../../shared/entity/product';
 
 import { styles } from './styles'
 

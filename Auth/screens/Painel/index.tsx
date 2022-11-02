@@ -1,7 +1,7 @@
-import { InternalRoutes } from '../../../Product/routes/internal.routes'
 import { Background } from '../../../shared/components/Background'
 import { useRoute } from '@react-navigation/native';
 import { DasboardData } from '../../../@types/navegation';
+import { AuthRoutes } from '../../routes/auth.routes';
 
 export function Dasboard() {  
   const route = useRoute()
@@ -9,7 +9,7 @@ export function Dasboard() {
 
   return (
     <Background>
-      <InternalRoutes token={token} />
+      <AuthRoutes token={token} />
     </Background>
   );
 }
